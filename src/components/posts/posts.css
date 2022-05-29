@@ -1,7 +1,7 @@
 .posts{
     /* flex: 1; */
-    display: flex;
-    flex-wrap: wrap;
+    /* display: flex;
+    flex-wrap: wrap; */
     margin:40px, 0px, 40px, 0px;
     height: fit-content;
     
