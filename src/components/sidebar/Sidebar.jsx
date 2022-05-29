@@ -49,6 +49,26 @@ export default function Sidebar() {
               Cinema
             </Link>
           </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+              Cinema
+            </Link>
+          </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+              Cinema
+            </Link>
+          </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+              Cinema
+            </Link>
+          </li>
+          <li className="sidebarListItem">
+            <Link className="link" to="/posts?cat=Cinema">
+              Cinema
+            </Link>
+          </li>
         </ul>
       </div>
       <div className="sidebarItem">

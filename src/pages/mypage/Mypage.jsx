@@ -1,10 +1,9 @@
 import { useLocation } from "react-router";
 import Posts from "../../components/posts/Posts";
 import Sidebar from "../../components/sidebar/Sidebar";
-import Header from "../../components/header/Header";
-import "./homepage.css";
+import "./mypage.css";
 
-export default function Homepage() {
+export default function Mypage() {
   const location = useLocation();
   console.log(location);
   return (
@@ -12,7 +11,7 @@ export default function Homepage() {
       <div className="home">
         
         <div className="mainbar">
-          <Header />
+          
           <Posts />
         </div>
         {/* <div className="home"> */}

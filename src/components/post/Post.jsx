@@ -1,7 +1,19 @@
 import { Link } from "react-router-dom";
 import "./post.css";
+import { useSelector } from 'react-redux';
+import { Box } from "@mui/system";
 
 export default function Post({title}) {
+  const userName = useSelector(state => state.user);
+  console.log(userName);
+
+  const handleMouseOver = (e) => {
+    e.stopPropagation();
+    e.preventDefault();
+    console.log(e.target.parent);
+    e.target.parent.parent.style.borderStyle = "solid";
+  }
+
   return (
     <div className="post">
       {/* <img
@@ -22,14 +34,18 @@ export default function Post({title}) {
             </Link>
           </span>
         </div> */}
-        <span className="postTitle">
+        <div className="postTitle" onMouseOver={handleMouseOver}>
           <Link to="/post/{title}" className="link">
             {title}
           </Link>
-        </span>
+          
+          <span className="postDate">1 hour ago</span>
+          <span className="postDate">{userName}</span>
+        </div>
         {/* <hr /> */}
-        {/* <span className="postDate">1 hour ago</span> */}
+        
       </div>
+      
       {/* <p className="postDesc">
         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda
         officia architecto deserunt deleniti? Labore ipsum aspernatur magnam

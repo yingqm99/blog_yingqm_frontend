@@ -72,11 +72,6 @@ export default function Write() {
             <i className="writeIcon fas fa-plus"></i>
           </label>
           <input id="fileInput" type="file" style={{ display: "none" }} onChange={showFile} />
-
-          {/* <label htmlFor="fileInput">
-            <i className="writeIcon fas fa-plus"></i>
-          </label>
-          <input id="fileInput" type="file" style={{ display: "none" }} /> */}
           <input
             id="titleInput" 
             className="writeInput"

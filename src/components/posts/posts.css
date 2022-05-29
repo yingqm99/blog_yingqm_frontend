@@ -1,7 +1,10 @@
 .posts{
-    flex: 9;
-    /* display: flex; */
+    /* flex: 1; */
+    display: flex;
     flex-wrap: wrap;
-    margin: 25px;
+    margin:40px, 0px, 40px, 0px;
+    height: fit-content;
+    
+    
 }
 
