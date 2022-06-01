@@ -6,6 +6,7 @@ import { useHistory } from "react-router-dom/cjs/react-router-dom.min";
 import { updateBlog } from '../../actions/actions';
 import { useDispatch } from "react-redux";
 
+
 export default function Write() {
 
   const [blogText, setBlogText] = useState('');

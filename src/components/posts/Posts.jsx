@@ -31,8 +31,9 @@ export default function Posts() {
       if (url.pathname === '/') {
         let all_blogs = [];
         data.blogs.map((blog) => {
-          all_blogs.push(blog.name);
+          all_blogs.push(blog);
         })
+        console.log(all_blogs);
         setAllBlogs(all_blogs);
       } else {
         setAllBlogs(blogs);
@@ -48,7 +49,8 @@ export default function Posts() {
     <div className="posts">
       {
         allBlogs.map((blog, i) => {
-          return <Post title={blog} />
+          console.log(blog);
+          return <Post blog={blog} />
         })
       }
     </div>
